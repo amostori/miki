@@ -48,17 +48,19 @@
                     </ul>
                 </li>
                 <li><a href="{{ url_for('page.elements') }}">Elements</a></li>
-                <li><a href="#" class="button primary">Zaloguj się</a></li>
+
+                <li><a href="{{ url_for('page.logout') }}" class="button primary">Wyloguj się</a></li>
                 <li><a href="{{ url_for('page.signup') }}" class="button primary">Stwórz konto</a></li>
             </ul>
         </nav>
     </header>
+
+    {% block content %}
     {% for message in get_flashed_messages() %}
     <div class="alert">
         <p>{{ message }}</p>
     </div>
     {% endfor %}
-    {% block content %}
     {% endblock %}
     <!-- Footer -->
     <footer id="footer">

@@ -1,15 +1,16 @@
 {% extends "base.html" %}
 {% block content %}
+
 <!-- Form -->
 <div id="main" class="wrapper style1">
     <div class="container">
         <section>
-            <h3>Stwórz urzytkownika</h3>
+            <h3>Zaloguj</h3>
             {{ super() }}
             <form method="post">
                 <div class="row gtr-uniform gtr-50">
                     <div class="col-6 col-12-xsmall">
-                        <input type="email" name="email" id="email" value="" placeholder="Email"/>
+                        <input type="email" name="email" id="email" value="{{ email }}" placeholder="Email"/>
                     </div>
                     <div class="col-6 col-12-xsmall">
                         <input type="password" name="password" id="password" value="" placeholder="Hasło"/>
