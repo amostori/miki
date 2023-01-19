@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+<!-- Form -->
+<div id="main" class="wrapper style1">
+    <div class="container">
+        <section>
+            <h3>Zaloguj</h3>
+            <form method="post">
+                <div class="row gtr-uniform gtr-50">
+                    <div class="col-6 col-12-xsmall">
+                        <input type="email" name="email" id="email" value="" placeholder="Email"/>
+                    </div>
+                    <div class="col-6 col-12-xsmall">
+                        <input type="password" name="password" id="password" value="" placeholder="Hasło"/>
+                    </div>
+                    <div class="col-12">
+                        <ul class="actions">
+                            <li><input type="submit" value="Zaloguj" class="primary"/></li>
+                            <li><input type="reset" value="Resetuj"/></li>
+                        </ul>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </div>
+</div>
+{% endblock %}
