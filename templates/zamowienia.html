@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+<!-- Main -->
+<div id="main" class="wrapper style1">
+    <div class="container">
+        <header class="major">
+            <h2>Zamów pyszne danie dla siebie</h2>
+            <p>Zdecyduj jakie danie przygotuję dla ciebie.</p>
+        </header>
+
+        <!-- Content -->
+        <section id="content">
+            <a href="#" class="image fit"><img src="{{  url_for('static', filename='images/yeast.jpg')}}" alt=""/></a>
+            <h3>Ciasto drożdżowe</h3>
+            <p>Cudowny zapach i smak pieczonych drożdży skusi każdego łasucha, nawet na ścisłej diecie.</p>
+            <footer>
+                <ul class="actions">
+                    <li><a href="mailto:{{ email }}" class="button">Zamów</a></li>
+                </ul>
+            </footer>
+        </section>
+        <hr/>
+
+    </div>
+</div>
+{% endblock %}

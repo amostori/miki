@@ -78,9 +78,10 @@ def left():
     return render_template('left-sidebar.html')
 
 
-@pages.route('/right-sidebar')
-def right():
-    return render_template('right-sidebar.html')
+@pages.route('/zamowienia')
+def zamowienia():
+    email = session['email']
+    return render_template('zamowienia.html', email=email)
 
 
 @pages.route('/no-sidebar')
