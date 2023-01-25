@@ -1,18 +1,19 @@
 {% from 'macros/footer.html' import footer %}
+{% from 'macros/dwukropek2.html' import logo %}
 {% extends "base.html" %}
 {% block content %}
 <!-- Banner -->
 <section id="banner">
     <div class="content">
         <header>
-            <h2>: )wukropek</h2>
+            {{ logo() }}
             <p>Restauracja z pasją</p>
             <p>{{ email }}</p>
             {{ super() }}
         </header>
         <span class="image"><img src="{{ url_for('static', filename='images/miki_logo.png') }}" alt=""/></span>
     </div>
-    <a href="#one" class="goto-next scrolly">Następn</a>
+    <a href="#one" class="goto-next scrolly">Następna</a>
 </section>
 
 <!-- One -->
