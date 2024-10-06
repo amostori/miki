@@ -19,7 +19,6 @@ def login_required(route):
 
 
 @pages.route('/')
-@login_required
 def index():
     return render_template('index.html', email=session.get('email'))
 
@@ -68,7 +67,6 @@ def logout():
 
 
 @pages.route('/zamowienia')
-@login_required
 def zamowienia():
     email = session['email']
     return render_template('zamowienia.html', email=email)
