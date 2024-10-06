@@ -1,12 +1,13 @@
 {% from 'macros/footer.html' import footer %}
 {% from 'macros/dwukropek2.html' import logo %}
+{% from 'macros/avocado.html' import smaczliwka %}
 {% extends "base.html" %}
 {% block content %}
 <!-- Banner -->
 <section id="banner">
     <div class="content">
         <header>
-            <h1>Smaczliwka</h1>
+            {{ smaczliwka() }}
             <p>Restauracja z pasją</p>
             <!--            {{ super() }}-->
         </header>
@@ -82,7 +83,7 @@
     <div class="container">
         <header>
             <h2>Restauracja Mikołaja Andrzejczaka</h2>
-            {{ logo() }}
+            {{ smaczliwka() }}
         </header>
     </div>
 </section>
