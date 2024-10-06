@@ -1,16 +1,21 @@
 {% from 'macros/footer.html' import footer %}
 {% from 'macros/dwukropek2.html' import logo %}
 {% from 'macros/avocado.html' import smaczliwka %}
+{% from 'macros/logo.html' import smaczliwka2 %}
+{% from 'macros/logo_best.html' import smaczliwka3 %}
 {% extends "base.html" %}
 {% block content %}
 <!-- Banner -->
 <section id="banner">
     <div class="content">
+
         <header>
-            {{ smaczliwka() }}
+            <h2>Smaczliwka</h2>
             <p>Restauracja z pasją</p>
-            <!--            {{ super() }}-->
+            {{ smaczliwka3() }}
         </header>
+
+        <!--            {{ super() }}-->
         <span class="image"><img src="{{ url_for('static', filename='images/miki_logo.png') }}" alt=""/></span>
     </div>
     <a href="#one" class="goto-next scrolly">Następna</a>
@@ -83,7 +88,7 @@
     <div class="container">
         <header>
             <h2>Restauracja Mikołaja Andrzejczaka</h2>
-            {{ smaczliwka() }}
+            {{ smaczliwka3() }}
         </header>
     </div>
 </section>
