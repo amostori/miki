@@ -23,13 +23,6 @@
         <nav id="nav">
             <ul>
                 <li><a href="{{ url_for('page.index') }}">Strona główna</a></li>
-                <li>
-                    <a href="{{ url_for('page.zamowienia') }}">Zamówienia</a>
-                </li>
-                {% if email %}
-                <li><a href="{{ url_for('page.logout') }}" class="button primary">Wyloguj się</a></li>
-                {% endif %}
-                <li><a href="{{ url_for('page.signup') }}" class="button primary">Stwórz konto</a></li>
             </ul>
         </nav>
     </header>
